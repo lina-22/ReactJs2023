@@ -1,0 +1,10 @@
+.headingStyle {
+  background-color: aquamarine;
+  color: rgb(91, 165, 42);
+  padding: 15px;
+  text-align: center;
+}
+
+.textStyle {
+  font-style: italic;
+}

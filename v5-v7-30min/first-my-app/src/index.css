@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .headingStyle {
   background-color: aquamarine;
   color: rgb(91, 165, 42);
@@ -7,4 +12,33 @@
 
 .textStyle {
   font-style: italic;
+}
+
+.card {
+  background-color: #ffda77;
+  box-shadow: 2px 4px 4px gray;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 390px;
+  display: inline-block;
+}
+
+.headingStyle {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cardDesc {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cardTitle {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.cardFooter {
+  text-align: center;
+  font-weight: bold;
 }

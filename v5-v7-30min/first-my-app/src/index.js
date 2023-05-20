@@ -1,13 +1,7 @@
+import App from "./App";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-const todoTitle = "Call Family";
-
-const date = new Date();
-
-const year1 = date.getFullYear();
-const month1 = date.getMonth();
-const day1 = date.getDay();
 
 // const headingStyle = {
 //   backgroundColor: "purple",
@@ -16,16 +10,7 @@ const day1 = date.getDay();
 // }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <div>
-    <h1 className="headingStyle"> Bismillah</h1>{" "}
-    <div className="card">
-      <h4 className="cardTitle"> {todoTitle} </h4>
-      <p className="cardDesc"> Alhamdulillah lorem jgjhghuyhuyhui </p>{" "}
-      <p className="cardFooter"> {day1 + " /" + month1 + " /" + year1} </p>{" "}
-    </div>
-  </div>
-);
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

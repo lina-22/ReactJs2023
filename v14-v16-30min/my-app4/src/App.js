@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+const users = [
+  {
+    fullName: "Fahinur Haque",
+    age: 32,
+    phones: [{ home: "01224455" }, { office: "01224455" }],
+  },
+
+  {
+    fullName: "Fahinur2 Haque2",
+    age: 33,
+    phones: [{ home: "01224455" }, { office: "01224455" }],
+  },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Nested Lists</h1>
+      {users.map((user, index) => (
+        <article key={index}>
+          <h3>{user.fullName}</h3>
+          <p>{user.age}</p>
+          {user.phones.map((phone, index) => (
+            <div key={index}>
+              <p>{phone.home}</p>
+              <p>{phone.office}</p>
+            </div>
+          ))}
+        </article>
+      ))}
     </div>
   );
 }

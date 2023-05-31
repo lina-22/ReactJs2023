@@ -1,4 +1,5 @@
 import React from "react";
+import TestC from "./TestC";
 const users = [
   {
     fullName: "Fahinur Haque",
@@ -16,19 +17,7 @@ const users = [
 function App() {
   return (
     <div className="App">
-      <h1>Nested Lists</h1>
-      {users.map((user, index) => (
-        <article key={index}>
-          <h3>{user.fullName}</h3>
-          <p>{user.age}</p>
-          {user.phones.map((phone, index) => (
-            <div key={index}>
-              <p>{phone.home}</p>
-              <p>{phone.office}</p>
-            </div>
-          ))}
-        </article>
-      ))}
+      <TestC />
     </div>
   );
 }

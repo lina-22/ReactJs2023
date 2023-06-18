@@ -1,24 +1,23 @@
 import React, { useState } from "react";
 
 export default function FORM() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState({ email: "", password: "" });
+  const { email, password } = user;
 
-  const handleEmailChanged = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChanged = (e) => {
-    setPassword(e.target.value);
+  const handleChange = (e) => {
+    const fieldName = e.target.name;
+    if (fieldName === email) {
+      setUser({ email: e.target.value, password });
+    }
+    if (fieldName === password) {
+      setUser({ email, pasword: e.target.password });
+    }
   };
 
   const handleSubmit = (e) => {
     console.log("from is submitted");
-    let userinfo = {
-      eml: email,
-      pass: password,
-    };
-    console.log(userinfo);
+
+    console.log(user);
     // console.log(e.target.value);
     e.preventDefault();
   };
@@ -35,7 +34,7 @@ export default function FORM() {
             name="email"
             id="email"
             value={email}
-            onChange={handleEmailChanged}
+            onChange={handleChange}
             required
           />
         </div>
@@ -47,7 +46,7 @@ export default function FORM() {
             name="password"
             id="password"
             value={password}
-            onChange={handlePasswordChanged}
+            onChange={handleChange}
           />
         </div>
 

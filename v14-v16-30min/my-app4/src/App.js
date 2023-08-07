@@ -1,5 +1,5 @@
 import React from "react";
-import TestC from "./TestC";
+
 const users = [
   {
     fullName: "Fahinur Haque",
@@ -17,7 +17,20 @@ const users = [
 function App() {
   return (
     <div className="App">
-      <TestC />
+      {users.map((user, index) => {
+        return (
+          <article key={index}>
+            <h3>FullName: {user.fullName}</h3>
+            <p>{user.age}</p>
+
+            {user.phones.map((phone, index) => (
+              <div key={index}>
+                <p> {phone.home}</p> <p> {phone.office}</p>
+              </div>
+            ))}
+          </article>
+        );
+      })}
     </div>
   );
 }

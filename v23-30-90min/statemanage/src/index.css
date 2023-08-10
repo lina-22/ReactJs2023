@@ -27,3 +27,7 @@ button {
   font-size: 2rem;
   width: 80px;
 }
+
+.parent {
+  background-color: rgb(84, 84, 9);
+}

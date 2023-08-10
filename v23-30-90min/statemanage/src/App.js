@@ -6,7 +6,10 @@
 // import Hello from "./EvHn3/index.js";
 // import EventBindding from "./EvHndBinding/index.js";
 // import Index from "./HooksUseState/index.js";
-import Index1 from "./HooksUseState/index1.js";
+// import Index1 from "./HooksUseState/index1.js";
+
+import Bubling from "./Bubling/Bubling";
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +18,8 @@ function App() {
       {/* <Hello /> */}
       {/* <EventBindding /> */}
       {/* <Index /> */}
-      <Index1 />
+      {/* <Index1 /> */}
+      <Bubling />
     </div>
   );
 }

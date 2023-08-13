@@ -1,10 +1,11 @@
-import Toggle from "./Toggle/Toggle.js";
+import FAQS from "./FAQ/FAQS.js";
 import "./App.css";
+// import FAQS from "../../FAQ/FAQS.js";
 
 function App() {
   return (
     <div className="App">
-      <Toggle />
+      <FAQS />
     </div>
   );
 }

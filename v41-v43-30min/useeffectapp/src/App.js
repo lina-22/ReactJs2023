@@ -1,5 +1,5 @@
 import "./App.css";
-import Datafetch from "./HOOKs/UseEffect/Datafetch";
+import Datafetch from "./HOOKs/CustomHooks/Datafetch1";
 
 // import UseEffectExemple from "./HOOKs/UseEffect/UseEffectExemple";
 

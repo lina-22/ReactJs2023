@@ -1,11 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Users from "./propsTypes/Users.js";
+import Lifecycle from "./lifecyle/Lifecycle.js";
 
 function App() {
   return (
     <div className="App">
-      <Users />
+      {/* <Users /> */}
+      <Lifecycle />
     </div>
   );
 }
